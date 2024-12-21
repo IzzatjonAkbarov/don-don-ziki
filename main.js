@@ -71,51 +71,98 @@ tosh.addEventListener("click", () => {
 });
 qaychi.addEventListener("click", () => {
   if (number() == 1) {
+    laptopscore.innerHTML++;
+
+    if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `durrang`;
+    } else if (laptopscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutqazdingiz`;
+    } else if (userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutdingiz`;
+    }
     return (
       (natiaja.innerHTML = "yutqazdingiz "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `tosh`),
-      laptopscore.innerHTML++
+      (laptop.innerHTML = `tosh`)
     );
   } else if (number() == 2) {
+    userscore.innerHTML++;
+    laptopscore.innerHTML++;
+    if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `durrang`;
+    } else if (laptopscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutqazdingiz`;
+    } else if (userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutdingiz`;
+    }
     return (
       (natiaja.innerHTML = "durrang "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qaychi`),
-      userscore.innerHTML++,
-      laptopscore.innerHTML++
+      (laptop.innerHTML = `qaychi`)
     );
   } else {
+    userscore.innerHTML++;
+
+    if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `durrang`;
+    } else if (laptopscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutqazdingiz`;
+    } else if (userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutdingiz`;
+    }
     return (
       (natiaja.innerHTML = "yutdingiz "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qog'oz`),
-      userscore.innerHTML++
+      (laptop.innerHTML = `qog'oz`)
     );
   }
 });
 qogoz.addEventListener("click", () => {
   if (number() == 1) {
+    userscore.innerHTML++;
+
+    if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `durrang`;
+    } else if (laptopscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutqazdingiz`;
+    } else if (userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutdingiz`;
+    }
     return (
       (natiaja.innerHTML = "yutdingiz "),
       (user.innerHTML = `qogoz`),
-      (laptop.innerHTML = `tosh`),
-      userscore.innerHTML++
+      (laptop.innerHTML = `tosh`)
     );
   } else if (number() == 2) {
+    laptopscore.innerHTML++;
+
+    if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `durrang`;
+    } else if (laptopscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutqazdingiz`;
+    } else if (userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutdingiz`;
+    }
     return (
       (natiaja.innerHTML = "yutqazdingiz "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qaychi`),
-      laptopscore.innerHTML++
+      (laptop.innerHTML = `qaychi`)
     );
   } else {
+    userscore.innerHTML++;
+    laptopscore.innerHTML++;
+    if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `durrang`;
+    } else if (laptopscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutqazdingiz`;
+    } else if (userscore.innerHTML == 3) {
+      umumiynatija.innerHTML = `yutdingiz`;
+    }
+
     return (
       (natiaja.innerHTML = "durrang "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qogoz`),
-      userscore.innerHTML++,
-      laptopscore.innerHTML++
+      (laptop.innerHTML = `qogoz`)
     );
   }
 });
