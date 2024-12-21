@@ -1,0 +1,272 @@
+const box = document.getElementById("box");
+console.log(box);
+
+box.addEventListener("mouseup", (e) => {
+  box.innerHTML = `thank you`;
+  //   box.style.left = `${e.clientX}px`;
+  //   box.style.top = `${e.clientY}px`;
+});
+box.addEventListener("mousedown", (e) => {
+  box.innerHTML = ` release me`;
+  //   box.style.left = `${e.clientX}px`;
+  //   box.style.top = `${e.clientY}px`;
+});.box {
+  width: 400px;
+  height: 200px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+\\\
+\
+\
+\
+
+\
+\
+\
+\
+\\
+\
+\
+\
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  padding: 5px;
+  border: 1px solid rgb(139, 74, 0);
+}
+
+.display {
+  width: 100%;
+  height: 80px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.num {
+  border: 1px solid #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.del {
+  background: #ffffff48;
+}
+
+button {
+  background: transparent;
+}
+.num:hover {
+  background: #ffffff48;
+} */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.box {
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+
+\
+\
+\
+\
+\
+\
+\\
+// let nums = document.querySelectorAll(".num");
+// let display = document.querySelector(".showNum");
+// let del = document.querySelector(".del");
+
+// nums.forEach((element) => {
+//   element.addEventListener("click", () => {
+//     display.innerHTML += element.value;
+//   });
+// });
+
+// del.addEventListener("click", () => {
+//   display.innerHTML = display.innerHTML.slice(0, -1);
+// });
+// const all = document.querySelector(".all");
+// all.addEventListener("click", () => {
+//   display.innerHTML = eval(display.innerHTML);
+// });
+// const form = document.getElementById("form");
+// const error = document.querySelector("error");
+
+// const lists = document.querySelector("lists");
+
+// let data = JSON.stringify(localStorage.getItem("todo")) || [];
+// form.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   let text = form.text.value;
+//   data = [...data, { text, time: getTime(), editTime: "", id: Date.now() }];
+//   if (text.trim()) {
+//     addTodo(data);
+//     localStorage.setItem("tode", JSON.parse(data));
+//   }
+//   form.text.value = "";
+// });
+// function Addtodo(data) {
+//   lists.innerHTML = "";
+//   data.forEach((value) => {
+//     const list = document.createElement("div");
+//     list.classList.add("list");
+//     list.innerHTML = `
+//     <span>${value.text}</span>
+//     <div class="icons"><i class="fa-solid fa-pen-to-square"></i><i id="${value.id}" class="fa-solid fa-trash"></i>
+//     </div>
+//      <div class="time">${value.time}</div>`;
+//     lists.append(div);
+//   });
+// }
+// function validateInput(text) {
+//   return text.trim() === ""
+//     ? (error.style.display = "block")
+//     : (error.style.display = "none");
+// }
+// function getTime(params) {
+//   const date = new Date();
+//   const hours = date.getHours() <= 10 ? "0" + date.getHours() : date.getHours();
+//   const minutes =
+//     date.getMinutes() <= 10 ? "0" + date.getMinutes() : date.getMinutes();
+//   const secunds =
+//     date.getSeconds() <= 10 ? "0" + date.getSeconds() : date.getSeconds();
+//   return `${hours}:${minutes}`;
+// }
+// lists.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("fa-trash")) {
+//     deletData(e.target.id);
+//   }
+// });
+// function deleteData(id) {
+//   data = data.filter((value) => value.id !== id);
+//   Addtodo(data);
+//   localStorage.setItem("todo", JSON.stringify(data));
+// }
+const box = document.getElementById("box");
+document.body.addEventListener("mousemove", (e) => {
+  box.style.left = `${e.clientX}px`;
+  box.style.top = `${e.clientY}px`;
+});
+
+document.body.addEventListener("click", (e) => {
+  const div = document.createElement("div");
+  div.classList.add("box");
+  div.style.left = `${e.clientX}px`;
+  div.style.top = `${e.clientY}px`;
+  document.body.append(div);
+});
+\
+\
+\
+\
+\
+\
+\
+\\
+\
+\
+
+
+\
+\
+\\\
+\
+\
+\
+\ <!-- <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <p class="showNum"></p>
+        </div>
+
+        <div class="numbers">
+          <button class="num num1" value="1">1</button>
+          <button class="num num2" value="2">2</button>
+          <button class="num num3" value="3">3</button>
+          <button class="num numadd" value="+">+</button>
+          <button class="num num4" value="4">4</button>
+          <button class="num num5" value="5">5</button>
+          <button class="num num6" value="6">6</button>
+          <button class="num numcut" value="-">-</button>
+
+          <button class="num num7" value="7">7</button>
+          <button class="num num8" value="8">8</button>
+          <button class="num num9" value="9">9</button>
+          <button class="num numdouble" value="*">*</button>
+
+          <button class="num num0" value="0">0</button>
+          <button class="num numcut2" value="/">/</button>
+          <button class="num del">x</button>
+        </div>
+        <button class="num all">=</button>
+      </div>
+    </div> -->
+    <!-- <section class="w-50 m-auto mt-5">
+      <h1>To do list by N17 Group:</h1>
+      <form id="form" class="d-flex">
+        <div class="w-100">
+          <input id="text" type="text" class="form-control" />
+          <p class="mt-2 error">Please enter text...</p>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <div class="lists mt-3"></div>
+    </section> -->
+    <div class="box" id="box"></div>

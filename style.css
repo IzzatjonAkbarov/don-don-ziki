@@ -1,0 +1,36 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10%;
+}
+.btn {
+  padding: 20px;
+  font-size: 30px;
+}
+.laptopscore1,
+.userscore1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.overallscore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.scores {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.scores1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.finalresult {
+  display: flex;
+  align-items: center;
+}
