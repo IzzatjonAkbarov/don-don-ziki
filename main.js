@@ -10,6 +10,7 @@ const submit = document.querySelector("submit");
 
 const user = document.querySelector(".user");
 const laptop = document.querySelector(".laptop");
+const btn = document.querySelector(".submit1");
 // console.log(laptopnumber);
 // if (tosh == laptopnumber) {
 //   console.log("durang");
@@ -22,116 +23,171 @@ function number() {
   return Math.ceil(Math.random() * 3);
 }
 tosh.addEventListener("click", () => {
+  btn.style.display = "block";
+
   if (number() == 1) {
     userscore.innerHTML++;
     laptopscore.innerHTML++;
+
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
     return (
       (natiaja.innerHTML = "durrang "),
-      (user.innerHTML = ` Tosh`),
-      (laptop.innerHTML = `Tosh`)
+      (laptop.innerHTML = `Tosh`),
+      alert("durrang raqibham tosh tanladi")((user.innerHTML = ` Tosh`))
     );
   } else if (number() == 2) {
     userscore.innerHTML++;
 
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
     return (
       (natiaja.innerHTML = "yutdingiz "),
       (user.innerHTML = ` Tosh`),
-      (laptop.innerHTML = `qaychi`)
+      (laptop.innerHTML = `qaychi`),
+      alert("yutdingiz raqib qaychi tanladi")((user.innerHTML = ` Tosh`))
     );
   } else {
     laptopscore.innerHTML++;
 
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
     return (
       (natiaja.innerHTML = "yutqazdingiz "),
       (user.innerHTML = `Tosh`),
-      (laptop.innerHTML = `qog'oz`)
+      (laptop.innerHTML = `qog'oz`),
+      alert("yutqazdingiz raqib qog'oz tanladi")((user.innerHTML = ` Tosh`))
     );
   }
 });
 qaychi.addEventListener("click", () => {
+  btn.style.display = "block";
+
   if (number() == 1) {
     laptopscore.innerHTML++;
 
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
     return (
       (natiaja.innerHTML = "yutqazdingiz "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `tosh`)
+      (laptop.innerHTML = `tosh`),
+      alert("yutqazdingiz raqib tosh tanladi")((user.innerHTML = ` Tosh`))
     );
   } else if (number() == 2) {
     userscore.innerHTML++;
     laptopscore.innerHTML++;
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
     return (
       (natiaja.innerHTML = "durrang "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qaychi`)
+      (laptop.innerHTML = `qaychi`),
+      alert("durrang raqib qaychi tanladi")((user.innerHTML = ` Tosh`))
     );
   } else {
     userscore.innerHTML++;
 
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
     return (
       (natiaja.innerHTML = "yutdingiz "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qog'oz`)
+      (laptop.innerHTML = `qog'oz`),
+      alert("yutdingiz raqib qog'oz tanladi")((user.innerHTML = ` Tosh`))
     );
   }
 });
 qogoz.addEventListener("click", () => {
+  btn.style.display = "block";
+
   if (number() == 1) {
     userscore.innerHTML++;
 
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
     return (
       (natiaja.innerHTML = "yutdingiz "),
       (user.innerHTML = `qogoz`),
-      (laptop.innerHTML = `tosh`)
+      (laptop.innerHTML = `tosh`),
+      alert("yutdingiz raqib tosh tanladi")((user.innerHTML = ` Tosh`))
     );
   } else if (number() == 2) {
     laptopscore.innerHTML++;
@@ -146,26 +202,32 @@ qogoz.addEventListener("click", () => {
     return (
       (natiaja.innerHTML = "yutqazdingiz "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qaychi`)
+      (laptop.innerHTML = `qaychi`),
+      alert("yutqazdingiz raqib qaychi tanladi")((user.innerHTML = ` Tosh`))
     );
   } else {
     userscore.innerHTML++;
     laptopscore.innerHTML++;
     if (laptopscore.innerHTML == 3 && userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `durrang`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (laptopscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutqazdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     } else if (userscore.innerHTML == 3) {
       umumiynatija.innerHTML = `yutdingiz`;
+      userscore.innerHTML = 0;
+      laptopscore.innerHTML = 0;
     }
 
     return (
       (natiaja.innerHTML = "durrang "),
       (user.innerHTML = `qaychi`),
-      (laptop.innerHTML = `qogoz`)
+      (laptop.innerHTML = `qogoz`),
+      alert("durrang raqib qog'oz tanladi")((user.innerHTML = ` Tosh`))
     );
   }
 });
-
-// userscore++;
-// laptopscore++;
+tosh.addEventListener("click", () => {});

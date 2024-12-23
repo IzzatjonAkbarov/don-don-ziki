@@ -33,4 +33,44 @@
 .finalresult {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.overallscore {
+  font-size: 15px;
+  font-weight: 400;
+  margin: auto;
+  width: 50%;
+}
+.scoresall {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 20px;
+}
+.scoresall div:first-child {
+  color: blue;
+}
+.scoresall div:last-child {
+  color: red;
+}
+.finalresult {
+  font-weight: bold;
+  font-size: 30px;
+}
+.submit {
+  margin: 20px 0;
+  width: 100px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+.submit1 {
+  width: 100px;
+  margin: auto;
+  display: none;
 }
