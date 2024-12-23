@@ -11,6 +11,8 @@ const submit = document.querySelector("submit");
 const user = document.querySelector(".user");
 const laptop = document.querySelector(".laptop");
 const btn = document.querySelector(".submit1");
+const btnstart = document.querySelector(".start");
+const first = document.querySelector(".first");
 // console.log(laptopnumber);
 // if (tosh == laptopnumber) {
 //   console.log("durang");
@@ -230,4 +232,7 @@ qogoz.addEventListener("click", () => {
     );
   }
 });
-tosh.addEventListener("click", () => {});
+btnstart.addEventListener("click", () => {
+  first.style.display = "block";
+  btnstart.style.display = "none";
+});

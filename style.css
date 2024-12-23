@@ -6,8 +6,10 @@
   margin-top: 10%;
 }
 .btn {
-  padding: 20px;
+  padding: 20px 25px;
   font-size: 30px;
+  border-radius: 50%;
+  background: yellow;
 }
 .laptopscore1,
 .userscore1 {
@@ -73,4 +75,21 @@
   width: 100px;
   margin: auto;
   display: none;
+}
+.first {
+  display: none;
+}
+
+.start {
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  background: red;
+  border: none;
+  width: 100px;
+  margin: 20% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
